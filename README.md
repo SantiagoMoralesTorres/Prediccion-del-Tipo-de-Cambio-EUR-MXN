@@ -15,7 +15,7 @@ El objetivo de este proyecto fue ajustar un modelo GARCH a la serie de tiempo de
 * Con la volatilidad predicha de los siguientes 5 días, se simularon 1000 escenarios posibles de la serie de los rendimientos, y con esta serie, se obtuvieron 1000 escenarios de la serie de tiempo del tipo de cambio EUR/MXN.
 * Finalmente, se obtuvó la probabilidad de que la serie superara cierto valor (21 MXN, 21.5 MXN, 22 MXN, 22.5 MXN y 23 MXN), contando el número de escenarios que superaron el valor establecido en cualquiera de los 5 días respecto a los 1000 escenarios simulados totales.
 
-## Resultados principales
+## Resultados
 * Los rendimientos mostraban una distribución leptocúrtica, similar a una t-student, con un fuerte sesgo a la derecha principalmente por los incrementos que tuvo la serie en ciertos periodos como la pandemia por COVID-19.
 * Se observó que los rendimientos no están autocorrelacionados entre sí, pero los rendimientos al cuadrado sí, mostrando que el conocer el rendimiento actual no es suficiente para estimar si el siguiente rendimiento será positivo o negativo (Mercados Eficientes), aunque si es posible tener una idea de su magnitud absoluta.
 * Un modelo de tipo SARIMA no es adecuado dado que no hay autocorrelaciones significativas en la serie de rendimientos, y por tanto, los coeficientes del modelo son 0 (no hay ajuste).
